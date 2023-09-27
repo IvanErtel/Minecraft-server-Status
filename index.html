@@ -5,34 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servidores de Minecraft - Encuentra y copia URLs de servidores de Minecraft en línea.">
     <title>Servidores de Minecraft - ServersMinecrafts</title>
+    <!-- Agregar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1><a href="/">ServersMinecrafts</a></h1>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">ServersMinecrafts</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <input type="text" id="search-input" class="form-control" placeholder="Buscar servidores">
+                        </li>
+                        <li class="nav-item">
+                            <button id="search-button" class="btn btn-primary">Buscar</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Mis Servers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mis Servers</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
         <h2>Servidores de Minecraft</h2>
-        <h3>Encuentra lo mejores servidores de minecraft activos</h3>
-        <section class="server-list">
+        <h3>Encuentra los mejores servidores de Minecraft activos</h3>
+
+        <section class="server-list row">
         </section>
-        <button id="load-more-button">Cargar Más</button>
+
+        <!-- <section class="server-list row">
+            <div class="col-md-3 col-sm-4 col-6">
+            </div>
+            <div class="col-md-3 col-sm-4 col-6">
+            </div>
+            <div class="col-md-3 col-sm-4 col-6">
+            </div>
+            <div class="col-md-3 col-sm-4 col-6">
+            </div>
+        </section> -->
+        
+        <button id="load-more-button" class="btn btn-primary mt-3">Cargar Más</button>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 ServersMinecrafts - Todos los derechos reservados.</p>
     </footer>
-    
+
+    <!-- Agregar Bootstrap JS y jQuery (al final del body) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu archivo JavaScript personalizado -->
     <script type="module" src="./javaScript/script.js"></script>
 </body>
 </html>
